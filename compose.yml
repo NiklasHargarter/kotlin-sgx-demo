@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  kotlin:
+    container_name: "kotlin-demo"
+    build: .
+    devices:
+      - "/dev/sgx/enclave:/dev/sgx/enclave"
+      - "/dev/sgx/enclave:/dev/sgx_enclave"
