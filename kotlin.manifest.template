@@ -16,7 +16,7 @@ sgx.trusted_files = [
   "file:/usr/lib/jvm/java-17-openjdk-amd64/",
   "file:/app/enclave.jar",
   "file:/app/jvm_args.txt",
-  "file:/plaintext/demo-file",
+  "file:/plaintext/demo-file.txt",
 
 ]
 
