@@ -22,7 +22,7 @@ RUN mkdir files \
     && gramine-sgx-pf-crypt gen-key -w files/wrap_key
 
 RUN mkdir encrypted \
-    && gramine-sgx-pf-crypt encrypt -w files/wrap_key -i plaintext/demo-file -o /encrypted/demo-file-enc.txt
+    && gramine-sgx-pf-crypt encrypt -w files/wrap_key -i plaintext/demo-file.txt -o /encrypted/demo-file-enc.txt
 
 WORKDIR /app
 
