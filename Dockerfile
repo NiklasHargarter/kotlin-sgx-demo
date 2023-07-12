@@ -14,7 +14,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /enclave.jar /app/
-COPY ./app/src/main/resources/demo-file /plaintext/
+COPY ./app/src/main/resources/demo-file.txt /plaintext/
 COPY ./kotlin.manifest.template /app/
 COPY ./entrypoint.sh /app/
 
