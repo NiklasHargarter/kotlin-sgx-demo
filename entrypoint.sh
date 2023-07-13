@@ -13,4 +13,4 @@ gramine-sgx-pf-crypt decrypt -w /files/wrap_key -i /encrypted/demo-file-enc.txt 
 echo "\nrun Kotlin application with decrypted file without Gramine-SGX"
 java -jar /app/enclave.jar /plaintext/demo-file-dec.txt
 
-echo "The Gramine-SGX and direct Run with the decrypted file both achieve the same output. \nbBut the in the Gramine-SGX run the file is never stored in a decrypted state on the system."
+echo "\nThe Gramine-SGX run and direct Run with the decrypted file both achieve the same output. \nBut the in the Gramine-SGX run the file is never stored in a decrypted state on the system."
